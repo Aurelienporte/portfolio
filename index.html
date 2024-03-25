@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aurélien Porté | Intégrateur web</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <script src="https://kit.fontawesome.com/5fe30726f7.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <header>
+      <h1>Aurélien Porté</h1>
+      <button class="burger__button">
+        <div class="burger__stripe"></div>
+        <div class="burger__stripe"></div>
+        <div class="burger__stripe"></div>
+      </button>
+      <!-- <nav>
+        <ul>
+          <li><a href="#presentation">Accueil</a></li>
+          <li><a href="#projects">Projets</a></li>
+          <li><a href="#codepen">Code Pen</a></li>
+          <li><a href="#skills">Compétences</a></li>
+          <li><a href="#education">Formation</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav> -->
+    </header>
+    <main>
+      <section id="presentation">
+        <!-- <h1>Aurélien Porté <span>Intégrateur web passionné</span></h1> -->
+        <h2 class="presentation__title">
+          Intégrateur web passionné,<br />pour un web responsive et accessible.
+        </h2>
+        <p class="presentation__p">
+          Sensible aux enjeux UX/UI,<br />je transforme vos idées<br />en
+          expériences web remarquables.
+        </p>
+      </section>
+      <section id="projects">
+        <h2>Projets</h2>
+        <ul class="projects__list">
+          <li class="projects__card">
+            <div class="back">
+              <div class="infos">
+                <h4 class="infos__title foreground">Contexte et intervention</h4>
+                <p class="infos__text foreground">
+                  Intégration d'après maquettes d'un site pour une agence de
+                  voyage fictive (projet d'étude). La demande principale était
+                  la responsivité du site.
+                </p>
+                <div class="links foreground">
+                  <a href="#" class="links__a"> visiter le site</a>
+                  <a href="#" class="links__a"> voir le code</a>
+                </div>
+                <div class="tools foreground">
+                  <h4 class="tools__title">Réalisé avec</h4>
+                  <div class="tools__icon-container">
+                    <div class="tools__icon"></div>
+                    <div class="tools__icon"></div>
+                    <div class="tools__icon"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="front">
+              <div class="front__caption foreground">
+                <h3 class="front__title">Booki</h3>
+                <h4 class="front__subtitle">Agence de voyage</h4>
+              </div>
+          </li>
+        </ul>
+      </section>
+      <section id="codepen">
+        <h2>Code pen</h2>
+        <ul>
+          <li></li>
+        </ul>
+      </section>
+      <section id="skills">
+        <h2>Compétences</h2>
+        <ul class="skills__list">
+          <li class="skill">
+            <h3 class="skill__title">HTML</h3>
+            <div class="skill__gauge advanced"></div>
+            <p>Avancé</p>
+          </li>
+          <li class="skill">
+            <h3 class="skill__title">CSS</h3>
+            <div class="skill__gauge advanced"></div>
+            <p>Avancé</p>
+          </li>
+          <li class="skill">
+            <h3 class="skill__title">SASS</h3>
+            <div class="skill__gauge confirmed"></div>
+            <p>Confirmé</p>
+          </li>
+          <li class="skill">
+            <h3 class="skill__title">Javascript</h3>
+            <div class="skill__gauge advanced"></div>
+            <p>Avancé</p>
+          </li>
+          <li class="skill">
+            <h3 class="skill__title">React</h3>
+            <div class="skill__gauge confirmed"></div>
+            <p>Confirmé</p>
+          </li>
+          <li class="skill">
+            <h3 class="skill__title">Redux</h3>
+            <div class="skill__gauge basics"></div>
+            <p>Basique</p>
+          </li>
+          <li class="skill">
+            <h3 class="skill__title">SEO on-page</h3>
+            <div class="skill__gauge confirmed"></div>
+            <p>Confirmé</p>
+          </li>
+          <li class="skill">
+            <h3 class="skill__title">GSAP</h3>
+            <div class="skill__gauge basics"></div>
+            <p>Basique</p>
+          </li>
+          <li class="skill">
+            <h3 class="skill__title">Tests</h3>
+            <div class="skill__gauge basics"></div>
+            <p>Basique</p>
+          </li>
+        </ul>
+      </section>
+      <section id="education">
+        <h2>Formation</h2>
+        <ul class="education__list">
+          <li class="school">
+            <p class="school__category">Web</p>
+            <h3 class="school__name">Openclassrooms</h3>
+            <p class="school__option">Parcours Intégrateur web</p>
+          </li>
+          <li class="school">
+            <p class="school__category">Artistique</p>
+            <h3 class="school__name">&Eacute;cole des beaux-arts de Cergy</h3>
+            <p class="school__option">Parcours art contemporain</p>
+          </li>
+        </ul>  
+      </section>
+      <section id="contact">
+        <h2>Contact</h2>
+        <div class="contact">
+          <p class="contact__text">Me contacter</p>
+          <h3 class="contact__title">Par e-mail</h3>
+          <a href="mailto:@aurel.porte@gmail.com" class="contact__mail"><i class="fa-regular fa-envelope"></i>
+          Envoyer un message</a>
+        </div>
+        <div class="contact">
+          <p class="contact__text">Me retrouver</p>
+          <h3 class="contact__title">Sur les réseaux</h3>
+          <ul class="contact__list">
+            <li><a href="https://codepen.io/qsgfhydfuk-ieeokdtkd"><i class="fa-brands fa-codepen"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/aur%C3%A9lien-port%C3%A9-b7a246281/"><i class="fa-brands fa-linkedin"></i></a></li>
+            <li><a href="https://github.com/Aurelienporte"><i class="fa-brands fa-github"></i></a></li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>&copy;2024 Aurélien Porté</p>
+    </footer>
+  </body>
+</html>
