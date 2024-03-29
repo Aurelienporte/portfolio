@@ -1,0 +1,50 @@
+[
+    {
+        "title": "Winter is coming",
+        "subtitle" :"Texte animé",
+        "cover":"./codepen/winter.webp",
+        "backImage": "./codepen/winter.webp",
+        "description":["Objectif : explorer les possibilités des propriétés background-clip et background-position pour une animation de texte"],
+        "links":[{
+            "name":"voir le codePen",
+            "url" :"https://codepen.io/qsgfhydfuk-ieeokdtkd/pen/BaMeWNL"
+        }],
+        "languages": ["html", "css"]
+    },
+    {
+        "title": "Animated Kadomatsu",
+        "subtitle" :"svg & gsap",
+        "cover":"./codepen/kadomatsu_cover.webp",
+        "backImage": "./codepen/kadomatsu_banner.webp",
+        "description":"Objectif : réaliser une image vectorielle et l'animer avec GSAP",
+        "links":[{
+            "name":"voir le codePen",
+            "url" :"https://codepen.io/qsgfhydfuk-ieeokdtkd/pen/JjzYeyw"
+        }],
+        "languages": ["html", "css", "javascript"]
+    },
+    {
+        "title": "Power button",
+        "subtitle" :"Checkbox hack",
+        "cover":"./codepen/power.webp",
+        "backImage": "./codepen/power.webp",
+        "description":"Objectif : challenge Codepen invitant à tester les possibilités CSS avec l'élément input de type checbox",
+        "links":[{
+            "name":"voir le codePen",
+            "url" :"https://codepen.io/qsgfhydfuk-ieeokdtkd/pen/QWoyROR"
+        }],
+        "languages": ["html", "css"]
+    },
+    {
+        "title": "Interactive night sky",
+        "subtitle" :"un clic = une étoile",
+        "cover":"./codepen/ciel.webp",
+        "backImage": "./codepen/ciel.webp",
+        "description":"Objectif : faire une proposition qui exploite les coordonnées x & y d'un clic de souris",
+        "links":[{
+            "name":"voir le codePen",
+            "url" :"https://codepen.io/qsgfhydfuk-ieeokdtkd/pen/poYbZGE"
+        }],
+        "languages": ["html", "css", "javascript"]
+    }
+]

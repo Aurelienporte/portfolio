@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Aurélien Porté, développeur front-end. Découvrir mes projets - Voir mes compétences - Me contacter">
     <title>Aurélien Porté | Intégrateur web</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,26 +13,77 @@
     />
     <link rel="stylesheet" href="index.css" />
     <script src="https://kit.fontawesome.com/5fe30726f7.js" crossorigin="anonymous"></script>
+    <script src="index.js" defer></script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Aurélien Porté | Développeur",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "12 rue Lanne",
+          "postalCode": "93200",
+          "addressLocality": "Saint-Denis"
+        },
+        "image": "./portrait.webp"
+      }
+    </script>
+        <!-- FACEBOOK CARD -->
+        <meta property="og:site_name" content="nomdusite" />
+        <meta property="og:type" content="website" />
+        <meta
+          property="og:url"
+          content="https://adressedusite"
+        />
+        <meta property="og:title" content="Aurélien Porté - Développeur front-end" />
+        <meta
+          property="og:description"
+          content="Découvrez mon univers et mes services"
+        />
+        <meta
+          property="og:image"
+          content="https://screenshotdusite.webp"
+        />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="628" />
+        <meta property="og:locale" content="fr_FR" />
+        <!-- TWITTER CARD -->
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@AurelPorte" />
+        <meta name="twitter:title" content="Aurélien Porté - Développeur" />
+        <meta
+          name="twitter:description"
+          content="Découvrez mon univers et mes services"
+        />
+        <meta
+          name="twitter:image"
+          content="https://imagedusite.webp"
+        />
+        <meta
+          name="twitter:url"
+          content="https://urldusite"
+        />
   </head>
   <body>
     <header>
-      <h1>Aurélien Porté</h1>
-      <button class="burger__button">
-        <div class="burger__stripe"></div>
-        <div class="burger__stripe"></div>
-        <div class="burger__stripe"></div>
-      </button>
-      <!-- <nav>
-        <ul>
-          <li><a href="#presentation">Accueil</a></li>
-          <li><a href="#projects">Projets</a></li>
-          <li><a href="#codepen">Code Pen</a></li>
-          <li><a href="#skills">Compétences</a></li>
-          <li><a href="#education">Formation</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav> -->
+        <h1>Aurélien Porté</h1>
+        <button class="burger">
+          <div class="burger__stripe"></div>
+          <div class="burger__stripe"></div>
+          <div class="burger__stripe"></div>
+        </button>
     </header>
+    <nav class="menu">
+      <ul class="menu__list">
+        <li><a class="menu__link" href="#presentation">Accueil</a></li>
+        <li><a class="menu__link" href="#projects">Projets</a></li>
+        <li><a class="menu__link" href="#codepen">Code Pen</a></li>
+        <li><a class="menu__link" href="#skills">Compétences</a></li>
+        <li><a class="menu__link" href="#education">Formation</a></li>
+        <li><a class="menu__link" href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
     <main>
       <section id="presentation">
         <!-- <h1>Aurélien Porté <span>Intégrateur web passionné</span></h1> -->
@@ -49,12 +101,15 @@
           <li class="projects__card">
             <div class="back">
               <div class="infos">
-                <h4 class="infos__title foreground">Contexte et intervention</h4>
-                <p class="infos__text foreground">
-                  Intégration d'après maquettes d'un site pour une agence de
-                  voyage fictive (projet d'étude). La demande principale était
-                  la responsivité du site.
-                </p>
+                <div class="text foreground">
+                  <h4 class="text__title">Contexte et intervention</h4>
+                  <p class="text__p">
+                    Intégration du front-end (page d'accueil, page de connexion) d'un site d'architecte (projet d'étude).
+                  </p>
+                  <p class="text__p">
+                    Critères de validation : appels API, manipulation dynamique du DOM, réaction aux événements utilisateur
+                  </p>
+                </div>
                 <div class="links foreground">
                   <a href="#" class="links__a"> visiter le site</a>
                   <a href="#" class="links__a"> voir le code</a>
@@ -62,9 +117,17 @@
                 <div class="tools foreground">
                   <h4 class="tools__title">Réalisé avec</h4>
                   <div class="tools__icon-container">
-                    <div class="tools__icon"></div>
-                    <div class="tools__icon"></div>
-                    <div class="tools__icon"></div>
+                    <figure>
+                      <img src="./icons/html_icon.svg" alt="" class="tools__icon">
+                      <figcaption class="tools__caption">html</figcaption>
+                    </figure>
+                    <figure>
+                      <img src="./icons/html_icon.svg" alt="" class="tools__icon">
+                      <figcaption class="tools__caption">html</figcaption>
+                    </figure>                    <figure>
+                      <img src="./icons/html_icon.svg" alt="" class="tools__icon">
+                      <figcaption class="tools__caption">html</figcaption>
+                    </figure>
                   </div>
                 </div>
               </div>
@@ -150,20 +213,22 @@
       </section>
       <section id="contact">
         <h2>Contact</h2>
-        <div class="contact">
-          <p class="contact__text">Me contacter</p>
-          <h3 class="contact__title">Par e-mail</h3>
-          <a href="mailto:@aurel.porte@gmail.com" class="contact__mail"><i class="fa-regular fa-envelope"></i>
-          Envoyer un message</a>
-        </div>
-        <div class="contact">
-          <p class="contact__text">Me retrouver</p>
-          <h3 class="contact__title">Sur les réseaux</h3>
-          <ul class="contact__list">
-            <li><a href="https://codepen.io/qsgfhydfuk-ieeokdtkd"><i class="fa-brands fa-codepen"></i></a></li>
-            <li><a href="https://www.linkedin.com/in/aur%C3%A9lien-port%C3%A9-b7a246281/"><i class="fa-brands fa-linkedin"></i></a></li>
-            <li><a href="https://github.com/Aurelienporte"><i class="fa-brands fa-github"></i></a></li>
-          </ul>
+        <div class="contact__list">
+          <div class="contact">
+            <p class="contact__text">Me contacter</p>
+            <h3 class="contact__title">Par e-mail</h3>
+            <a href="mailto:@aurel.porte@gmail.com" class="contact__mail"><i class="fa-regular fa-envelope"></i>
+            Envoyer un message</a>
+          </div>
+          <div class="contact">
+            <p class="contact__text">Me retrouver</p>
+            <h3 class="contact__title">Sur les réseaux</h3>
+            <ul class="contact__socials-list">
+              <li><a href="https://codepen.io/qsgfhydfuk-ieeokdtkd"><i class="fa-brands fa-codepen"></i></a></li>
+              <li><a href="https://www.linkedin.com/in/aur%C3%A9lien-port%C3%A9-b7a246281/"><i class="fa-brands fa-linkedin"></i></a></li>
+              <li><a href="https://github.com/Aurelienporte"><i class="fa-brands fa-github"></i></a></li>
+            </ul>
+          </div>
         </div>
       </section>
     </main>

@@ -1,0 +1,46 @@
+[
+    {
+        "name": "HMTL",
+        "level": 3
+    },
+    {
+        "name": "CSS",
+        "level": 3
+    },
+    {
+        "name": "SASS",
+        "level": 2
+    },
+    {
+        "name": "GSAP",
+        "level": 1
+    },
+    {
+        "name": "SEO on-page",
+        "level": 2
+    },
+    {
+        "name": "Javascript",
+        "level": 3
+    },
+    {
+        "name": "YAML / Swagger",
+        "level": 1
+    },
+    {
+        "name": "React",
+        "level": 2
+    },
+    {
+        "name": "React Router",
+        "level": 2
+    },
+    {
+        "name": "React Testing Library",
+        "level": 1
+    },
+    {
+        "name": "Redux / RTK",
+        "level": 1
+    }
+]
